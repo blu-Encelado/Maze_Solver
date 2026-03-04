@@ -1,21 +1,17 @@
 from Window import *
 from Point_Line import *
 from src.config import *
+from Cell import *
 
 def main():
     print(Title, "start")
     win = Window(Width, Height, Title)
     
+    cell = Cell(win)
+    cell.draw(50, 200, 50, 200)
+    cell.draw(25, 150, 25, 150)
+    cell.draw(2, 400, 8, 300)
 
-    line_a=Line(Point(5,5), Point(400,300))
-    line_b=Line(Point(2,20), Point(400,300))
-    line_c=Line(Point(1,80), Point(400,300))
-    line_d=Line(Point(520,790), Point(400,300))
-
-    win.draw_line(line_a, "black")
-    win.draw_line(line_b, "black")
-    win.draw_line(line_c, "black")
-    win.draw_line(line_d, "black")
 
     win.wait_for_close()
 
