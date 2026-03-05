@@ -11,4 +11,4 @@ class Line:
         self.b = point_b
     
     def draw(self, canvas: Canvas, fill_color: str):
-        canvas.create_line(self.a.x, self.a.y, self.b.x, self.b.y, width=2)
+        canvas.create_line(self.a.x, self.a.y, self.b.x, self.b.y, width=2, fill=fill_color)

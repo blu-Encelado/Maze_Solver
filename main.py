@@ -1,17 +1,13 @@
 from Window import *
 from Point_Line import *
 from src.config import *
-from Cell import *
+from Maze_from_Cells import *
 
 def main():
     print(Title, "start")
     win = Window(Width, Height, Title)
     
-    cell = Cell(win)
-    cell.draw(50, 200, 50, 200)
-    cell.draw(25, 150, 25, 150)
-    cell.draw(2, 400, 8, 300)
-
+    maze = Maze(25,25,10,10,100,100,win)
 
     win.wait_for_close()
 
