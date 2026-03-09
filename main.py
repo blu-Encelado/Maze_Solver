@@ -7,8 +7,9 @@ def main():
     print(Title, "start")
     win = Window(Width, Height, Title)
     
-    maze = Maze(25,25,10,10,100,100,win)
+    m1 = Maze(25,25,25,25,20,20,win,10)
 
+    m1.solve()
     win.wait_for_close()
 
 
